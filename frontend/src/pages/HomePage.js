@@ -53,7 +53,7 @@ const HomePage = () => {
       setContacts([]); // Clear the previous user's contacts
   
       // Establish socket connection after setting the username
-      socketRef.current = io("http://localhost:5000");
+      socketRef.current = io("https://chat-app-h1gr.onrender.com");
   
       socketRef.current.on("connect", () => {
         if (user.username) {
@@ -73,7 +73,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/auth/users");
+        const response = await axios.get("https://chat-app-h1gr.onrender.com/api/auth/users");
         const filteredContacts = response.data.filter((contact) => contact.username !== username); // Filter out the logged-in user
         setContacts(filteredContacts);
       } catch (error) {

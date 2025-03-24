@@ -17,7 +17,7 @@ const ChatWindow = ({ username, selectedChat }) => {
     if (!username) return;
   
     // Establish socket connection only once
-    socketRef.current = io("http://localhost:5000", {
+    socketRef.current = io("https://chat-app-h1gr.onrender.com", {
       reconnection: true,
       reconnectionAttempts: 5,
       reconnectionDelay: 1000,

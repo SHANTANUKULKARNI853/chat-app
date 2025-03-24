@@ -1,4 +1,4 @@
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000"); // Update with your backend URL
+const socket = io("https://chat-app-h1gr.onrender.com"); // Update with your backend URL
 export default socket;

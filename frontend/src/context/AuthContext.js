@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
   // Login function (with email and password)
   const login = async (email, password) => {
     try {
-      const response = await fetch("http://localhost:5000/api/auth/login", {
+      const response = await fetch("https://chat-app-h1gr.onrender.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -49,7 +49,7 @@ export const AuthProvider = ({ children }) => {
   // Signup function (with username, email, and password)
   const signup = async (username, email, password) => {
     try {
-      const response = await fetch("http://localhost:5000/api/auth/signup", {
+      const response = await fetch("https://chat-app-h1gr.onrender.com/api/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
