@@ -1,0 +1,19 @@
+.message-bubble {
+    max-width: 60%;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 12px;
+    color: white;
+  }
+  
+  .sent {
+    background-color: #34b7f1;
+    align-self: flex-end;
+  }
+  
+  .received {
+    background-color: #ece5dd;
+    color: black;
+    align-self: flex-start;
+  }
+  
